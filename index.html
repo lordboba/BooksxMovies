@@ -2,10 +2,90 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Discover</title>
+    <title>BooksxMovies</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="button.js"></script>
   </head>
+
   <body>
-    
+    <!-- <div class="navbar">
+      <ul>
+        <li>
+          <a href="https://lesmoffat.co.uk" target="_BLANK" class="box foo">Discover</a>
+        </li>
+        <li>
+          <a href="https://lesmoffat.co.uk" target="_BLANK" class="box bar">About Us</a>
+        </li>
+        <li>
+          <a href="https://lesmoffat.co.uk" target="_BLANK" class="box curmudgeon">Contact Us</a>
+        </li>
+
+      </ul>
+    </div>
+    -->
+    <img class="logo" src="images/logo_withwords.jpg" alt="logo">
+
+    <div class="top-container">
+      <img class="right-curtain" src="images/rightcursedtain.png" alt="right curtain">
+      <img class="left-curtain" src="images/left-curtain.png" alt="left curtain">
+      <h1>Discover books & movies you'll love!</h1>
+      <img class="animation-movie" src="images/animation_movies.jpg" alt="animation-movie-img">
+      <img class="popular-books" src="images/popular_books.png" alt="popular-books-img">
+      <img class="popular-movies" src="images/popular-movies.jpg" alt="popular-movies-img">
+      <h2 class="enter">Enter books and/or movies you like and the site will provide book and movie recommendations😄</h2>
+      <h2>Scroll Down To Start Searching!</h2>
+      <img class="down-arrow" src="images/down_arrow_transparent_actual.png" alt="down-arrow">
+    </div>
+
+    <div class="middle-container">
+      <h3>Your Age</h3>
+      <table class="book-movie-input">
+        <tr>
+          <th>Add Book</th>
+          <th>Add Movie</th>
+        </tr>
+        <tr>
+          <td><input type="text" id="BookTextbox">
+              <button class="btn" onclick="addBook()">Search</button></td>
+          <td><input type="text" id="MovieTextbox">
+              <button class="btn" onclick="showMovieTable()">Search</button></td>
+        </tr>
+      </table>
+      <div class="stacked-tables">
+        <table id="inputted-book-table">
+          <tr>
+            <th>Inputted Books</th>
+          </tr>
+        </table>
+        <table id="inputted-movie-table">
+          <tr>
+            <th>Inputted Movies</th>
+          </tr>
+        </table>
+      </div>
+      <button>Results</button>
+    </div>
+
+    <div class="bottom-container">
+
+    </div>
+
+    <hr>
+    <div class="contact-us">
+      <h2 class="get-in-touch">Get In Touch</h2>
+      <h3>Do you have any questions or feedback for us?</h3>
+      <a class="btn" href="mailto:booksxmoviez@gmail.com">CONTACT US</a>
+    </div>
+
+    <div class="bottom-words">
+      <p class="bottom-words">© 2022 BookxMovies</p>
+    </div>
   </body>
 </html>
