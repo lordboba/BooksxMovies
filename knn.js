@@ -23,7 +23,7 @@ function near_movie(tensor_avg) {
     return top9;
 }
 
-
+//hi
 function near_book(tensor_avg) {
     const book_json = require('./book_grid.json');
     //apply k nearest neighbors
