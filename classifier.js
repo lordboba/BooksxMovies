@@ -1,5 +1,7 @@
-const key = "AIzaSyDcwK4wlyzL3hFcofRio7Lo_t71DCu4SkI"
-const movkey = "eb454fd9"
+
+require('dotenv').config()
+const key = process.env.BOOKKEY;
+const movkey = process.env.MOVKEY;
 //Gets the book at the User's Request, used for selection of favorite books
 
 function getbook(book) {

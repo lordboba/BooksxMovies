@@ -18,12 +18,17 @@ for title in movies:
     if desc == "":
         desc = title
     tensor = encode.embedd(desc)
-    rating = float(info["Rating"])/10
+    rating = 0.0
+   # print(type(info["Rating"]))
+    try:
+        rating = float(info["Rating"])/10
+    except ValueError:
+        rating = 0.78
     tensor.append(rating)
     gridz[title] = [tensor,info["Title"],info["Plot"],info["Poster"],info["Rated"],info["Actors"]]
     sum = sum + 1
     if sum %10 == 0:
-        print("sus")
+        print(f"sus {len(gridz)}")
         with open('movie_grid.json', 'w') as f:
             json.dump(gridz,f)
 

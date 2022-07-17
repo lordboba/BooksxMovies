@@ -42,10 +42,16 @@
       <h2 class="enter">Enter books and/or movies you like and the site will provide book and movie recommendations😄</h2>
       <h2>Scroll Down To Start Searching!</h2>
       <img class="down-arrow" src="images/down_arrow_transparent_actual.png" alt="down-arrow">
-    </div>
+    </div>z
 
     <div class="middle-container">
-      <h3>Your Age</h3>
+      <h3 id="error-message">Please only input at most 5 for each category!</h2>
+      <h3>Select Your Age</h3>
+      <select id="framework">
+        <option value="1">Under 13</option>
+        <option value="2">13 to 18</option>
+        <option value="3">18+</option>
+      </select>
       <table class="book-movie-input">
         <tr>
           <th>Add Book</th>
@@ -55,7 +61,7 @@
           <td><input type="text" id="BookTextbox">
               <button class="btn" onclick="addBook()">Search</button></td>
           <td><input type="text" id="MovieTextbox">
-              <button class="btn" onclick="showMovieTable()">Search</button></td>
+              <button class="btn" onclick="addMovie()">Search</button></td>
         </tr>
       </table>
       <div class="stacked-tables">
@@ -70,7 +76,9 @@
           </tr>
         </table>
       </div>
-      <button>Results</button>
+      <br>
+      <br>
+      <button class="btn">Results</button>
     </div>
 
     <div class="bottom-container">

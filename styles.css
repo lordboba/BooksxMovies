@@ -22,6 +22,10 @@ h2 {
   font-size: 1.5rem;
 }
 
+table {
+  text-align: left;
+}
+
 h3 {
   color: #11999E;
   font-family: 'Montserrat', sans-serif;
@@ -129,6 +133,8 @@ hr {
   text-align: center;
   position: relative;
   top: 70px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
@@ -295,4 +301,8 @@ hr {
   background-color: #66BFBF;
   color: white;
   text-align: center;
+}
+
+#error-message{
+  color: red;
 }
